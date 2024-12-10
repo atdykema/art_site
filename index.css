@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    cursor:url(/images/dancing-numbers.gif), auto;
+}
+
+body{
+    background-color: black;
+}
+
+.art_container{
+    display: flex;
+    height: 100px;
+    width: 100vw;
+}
+
+.art_piece {
+  transition: transform .5s, width 2s; /* Smooth transition for both size and transform */
+  scale: 1;
+  height: 100vh;
+  width: 10px;
+
+}
+
+
+.art_piece:hover {
+  transform: scale(0.95); /* Shrinks by 5% */
+  width: 10000px;
+  image-rendering: pixelated;
+  transition: transform 1s;
+}
+
+.text_container{
+    height: 100vh;
+    width: 1vw;
+}
+
+.text_container {
+  width: 1vw; /* Starting width */
+  background-color: blue; /* Optional: for visibility */
+  animation: growShrink 4.5s infinite;
+}
+
+.secret {
+  position: relative;
+  z-index: -1;
+  animation: sideToSide 1s ease infinite alternate;
+}
+
+.floater{
+    float: right;
+    width: 100px;
+    height: 200px;
+    left: 100px;
+    top: 500px;
+    position: absolute;
+    z-index: 10;
+    background-color: #970f0f;
+}
+@keyframes sideToSide {
+  from {
+    left: 0px; /* Start at left */
+  }
+  to {
+    left: 100px;
+  }
+}
