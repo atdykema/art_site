@@ -24,7 +24,6 @@ body{
 
 }
 
-
 .art_piece:hover {
   transform: scale(0.95); /* Shrinks by 5% */
   width: 10000px;
@@ -58,6 +57,27 @@ body{
     position: absolute;
     z-index: 10;
     background-color: #970f0f;
+}
+
+.i-give-up{
+    display: flex;
+    float: right;
+    width: 500px;
+    height: 300px;
+    left: 1000px;
+    top: 1000px;
+    position: absolute;
+    z-index: -10;
+    background-color: aquamarine;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-give-up-a{
+    color: whitesmoke;
+    font-weight: 700;
+    font-style: italic;
+    font-size: x-large;
 }
 @keyframes sideToSide {
   from {

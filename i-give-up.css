@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    cursor:url(/images/dancing-numbers.gif), auto;
+}
+
+.art_container{
+    display: flex;
+    height: 100px;
+    width: 100vw;
+}
+
+.art_piece {
+  transition: transform .5s, width 2s; /* Smooth transition for both size and transform */
+  scale: 1;
+  height: 100px;
+  width: 100px;
+
+}
